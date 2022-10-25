@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles/form.css" />
   </head>
   <body>
-    <form id="form" class="form" action="">
+    <form id="form" class="form form--hidden" action="">
       <h1 class="form__title">Happy Birthday</h1>
       <div class="form__textLabel">
         <label class="form__label">Your name</label>
@@ -20,15 +20,16 @@
       </div>
       <div class="form__textLabel">
         <label class="form__label">Color</label>
-        <input class="form__input" type="text" id="topic" name="topic" />
+        <input class="form__input" type="text" id="color" name="color" />
       </div>
-      <div class="form__textLabel">
+      <!-- <div class="form__textLabel">
         <label class="form__label">Pokemon</label>
-        <input class="form__input" type="text" id="topic" name="topic" />
-      </div>
+        <input class="form__input" type="text" id="pokemon" name="topic" />
+      </div> -->
       <div class="form__button-cont">
         <button class="form__button">Generate card</button>
       </div>
     </form>
+    <script src="./script/form.js"></script>
   </body>
 </html>
