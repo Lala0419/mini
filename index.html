@@ -5,24 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://github.com/googlefonts/fuzzy-bubbles"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/form.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
-    <h1>Daniel is Awesome</h1>
-    <p>Here are 3 articles that were published on your Birthday</p>
-    <img class="pokemon__img" src="" />
-    <form id="form" class="form form--hidden" action="">
-      <h1 class="form__title">Happy Birthday</h1>
+    <h1>Team SAND</h1>
+    <form id="form" class="form" action="">
+      <h1 class="form__title">Happy Birthday! 🎉</h1>
       <div class="form__textLabel">
-        <label class="form__label">Your name</label>
+        <label class="form__label">What is your name?</label>
         <input class="form__input" type="text" id="name" name="name" />
       </div>
       <div class="form__textLabel">
-        <label class="form__label">Your birthday</label>
+        <label class="form__label">When is your birthday?</label>
         <input class="form__input" type="date" id="birthday" name="birthday" />
       </div>
       <div class="form__textLabel">
-        <label class="form__label">Color</label>
+        <label class="form__label">What's your favourite colour?</label>
         <input class="form__input" type="text" id="color" name="color" />
       </div>
       <!-- <div class="form__textLabel">
@@ -33,9 +36,23 @@
         <button class="form__button">Generate card</button>
       </div>
     </form>
-
+    <div class="card">
+      <div class="card__outside">
+        <div class="card__front">
+          <p>Here is your surprise! 🤗</p>
+          <h1 class="card__emoji"></h1>
+        </div>
+        <div class="card__back"></div>
+      </div>
+      <div class="card__inside">
+        <p class="">
+          Wishing you a very happy birthday filled with love and laughter
+        </p>
+        <img class="pokemon__img" src="" />
+      </div>
+    </div>
   </body>
-      <script src="./script/form.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./script/form.js"></script>
   <script src="./script/script.js"></script>
 </html>
