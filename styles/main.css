@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Fuzzy Bubbles";
+  src: url("/assets/fonts/FuzzyBubbles-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Fuzzy Bubbles";
+}
+
+body {
+  background-color: rgb(237, 126, 102);
+}
+
+.card {
+  display: none;
+  width: 45rem;
+  height: 27rem;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  perspective: 75rem;
+  transition: 3s;
+}
+.card--unhide {
+  display: block;
+}
+.card:hover {
+  transform: rotate(-5deg);
+}
+.card:hover .card__outside {
+  transform: rotateY(-130deg);
+}
+.card__outside, .card__inside {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  left: 50.1%;
+}
+.card__inside {
+  background: linear-gradient(to right, #e7e7e7, #ffffff 30%);
+  line-height: 3;
+  padding: 0 1.25rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  left: 50%;
+  border-radius: 0.6rem;
+}
+.card__outside {
+  transform-style: preserve-3d;
+  z-index: 1;
+  transform-origin: left;
+  transition: 2s;
+  cursor: pointer;
+  border-radius: 0.6rem;
+}
+.card__front, .card__back {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  border-radius: 0.6rem;
+}
+.card__front {
+  background-color: #ffffff;
+}
+.card__back {
+  transform: rotateY(180deg);
+  background: linear-gradient(to left, #e7e7e7, #ffffff 30%);
+}
+.card__emoji {
+  width: 100%;
+  position: absolute;
+  bottom: 1.875rem;
+}
+.card__outside p {
+  font-size: 1.4375rem;
+  text-transform: uppercase;
+  margin-top: 1.875rem;
+  text-align: center;
+  letter-spacing: 0.375rem;
+  color: #000046;
+}
+.card__inside h1 {
+  font-size: 7.5rem;
+  line-height: 7.5rem;
+}/*# sourceMappingURL=main.css.map */
