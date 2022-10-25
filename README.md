@@ -1,1 +1,1 @@
-# mini
+# Mini-Hackathon
