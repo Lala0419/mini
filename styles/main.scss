@@ -75,6 +75,11 @@ body {
   }
   &__front {
     background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
   }
   &__back {
     transform: rotateY(180deg);
@@ -106,6 +111,11 @@ body {
 
 .pokemon__img {
   margin-top: 0;
+  width: 150px;
+  height: 150px;
+}
+
+.card__front-unsplash {
   width: 150px;
   height: 150px;
 }

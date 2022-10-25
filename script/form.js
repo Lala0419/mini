@@ -41,11 +41,16 @@ const buttonClicked = (e) => {
   console.log(name);
   console.log(birthday);
   console.log(color);
+
+  //   Add pokemon + unsplash image
   console.log(name);
   getPokemonImage(color);
+  getUnsplashImage(color);
+
   form.classList.add("form--hidden");
   //   Unhide the card
   const card = document.querySelector(".card");
+
   card.classList.add("card--unhide");
 
   date.innerText = birthday;
@@ -95,5 +100,27 @@ function getPokemonImage(color) {
         "src",
         `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${res.data.id}.png`
       );
+    });
+}
+
+// Unsplash API
+const UNSPLASH_ACCESS_KEY = "ooIRJ7ansEiKhHfOACJ29DNlq-ths_z7C7OV7IAk6CQ";
+const UNSPLASH_SECRET_KEY = "zeNu4O__ujeXBYEnDuaqjUJY_NsoUDDO1VXP5iSCdBo";
+function getUnsplashImage(color) {
+  const UNSPLASH_URL = `https://api.unsplash.com/search/photos/?client_id=${UNSPLASH_ACCESS_KEY}&color=${color}&query=birthday`;
+
+  const unsplashRes = axios
+    .get(UNSPLASH_URL)
+    .then(function (response) {
+      console.log(response);
+      console.log(response.data.results[0].urls.small);
+      const imageURL = response.data.results[0].urls.small;
+
+      //   render the image
+      const unsplashImage = document.querySelector(".card__front-unsplash");
+      unsplashImage.setAttribute("src", imageURL);
+    })
+    .catch(function (error) {
+      console.log(error);
     });
 }
