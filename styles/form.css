@@ -11,6 +11,9 @@
   border-radius: 16px;
   box-shadow: 8px 8px 32px;
 }
+.form--hidden {
+  display: none;
+}
 .form__textLabel {
   display: flex;
   flex-direction: column;
