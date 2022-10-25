@@ -43,15 +43,16 @@ body {
   }
   &__inside {
     background: linear-gradient(to right, #e7e7e7, #ffffff 30%);
-    line-height: 3;
-    padding: 0 1.25rem;
+    // line-height: 3;
+    padding: 40px 1.25rem;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     left: 50%;
     border-radius: 0.6rem;
+    // border: 2px solid red;
   }
   &__outside {
     -webkit-transform-style: preserve-3d;
@@ -90,6 +91,16 @@ body {
   &__inside h1 {
     font-size: 7.5rem;
     line-height: 7.5rem;
+  }
+
+  &__date {
+    margin-right: auto;
+  }
+  &__name {
+    margin-right: auto;
+  }
+  &__message {
+    margin-top: 0px;
   }
 }
 
