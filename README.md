@@ -2,7 +2,8 @@
 Creates a custom birthday card based on your birthday and favourite colour!
 
 ## Demo
-https://user-images.githubusercontent.com/94336773/202265584-bc0cddc4-16fc-4976-add3-387254e86c63.mp4
+https://user-images.githubusercontent.com/94336773/202265998-9ec217bd-06c2-4fa3-9643-301059b8ad4f.mp4
+
 
 ### APIs Used
 [UnsplashAPI](https://unsplash.com/developers)
