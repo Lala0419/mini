@@ -1,4 +1,4 @@
-# Mini-Hackathon
+# Birthday Card Generator (Hackathon)
 Creates a custom birthday card based on your birthday and favourite colour! Made in less than 6 hours for a [BrainStation Hackathon](http://brainstation.io/).
 
 ## Demo
