@@ -1,6 +1,8 @@
 # Birthday Card Generator (Hackathon)
 Creates a custom birthday card based on your birthday and favourite colour! Made in less than 6 hours for a [BrainStation Hackathon](http://brainstation.io/).
 
+**Try out the demo here:** [Website](https://birthday-card-generator.netlify.app/)
+
 ## Demo
 https://user-images.githubusercontent.com/94336773/202265998-9ec217bd-06c2-4fa3-9643-301059b8ad4f.mp4
 
